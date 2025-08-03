@@ -1,5 +1,5 @@
 # CPLD-XC95288XL-replacement-for-scld-timex
-Based on the work ok Alvaro and the museum load 
+Based on the work of Alvaro and the museum load 
 
 Timex SCLD
 This is an implementation of the Timex TC2068 SCLD as can be found in Timex models TC2048 and TC2068.
