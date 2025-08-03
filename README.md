@@ -29,3 +29,6 @@ Programming can be acomplished with Xilinx Impact using a proper programmer (i.e
 
 Building
 Just type "make" under the SDLC implementation folder (syn/xilinx). Alternatively you can try loading the ISE project in the same directory.
+
+just a PCB for the timmy to test signals... and the software for the xilinx, the pcb as less components than the museum one, the xilinx is of 2x the size.
+
