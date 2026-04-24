@@ -1,4 +1,5 @@
 # Timex SCLD CPLD Replacement (TC2068)
+Target device: Xilinx XC95288XL CPLD
 
 ![Working Setup](docs/images/image-1777061753765.jpg)
 
@@ -12,7 +13,6 @@ A fully working CPLD replacement for the Timex SCLD — validated on real hardwa
 > This is not just a simulation model — this version works on real hardware.
 
 ---
-Target device: Xilinx XC95288XL CPLD
 
 ## 🎥 Demo (Real Hardware)
 
