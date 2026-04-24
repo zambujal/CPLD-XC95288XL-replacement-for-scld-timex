@@ -69,7 +69,9 @@ The CPLD board was designed to interface with the original Timex hardware using 
 
 ![CPLD Prototype](docs/images/IMG20260424220437.jpg)
 
-Hand-assembled CPLD prototype (beta version) used during early hardware validation.
+Hand-assembled CPLD final prototype (beta version) .
+
+![CPLD Prototype](docs/images/IMG20260424220423.jpg)
 
 ---
 
