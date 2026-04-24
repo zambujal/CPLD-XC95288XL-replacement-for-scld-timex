@@ -16,9 +16,11 @@ A fully working CPLD replacement for the Timex SCLD — validated on real hardwa
 
 > ✔ Proof of real hardware operation — not just simulation
 
-### CPLD Replacement Running (Timmy)
+### CPLD Replacement Running (Timex 2048 "Timmy")
 
 https://www.youtube.com/watch?v=t5ia4-bkabo
+
+---
 
 ### CPLD Replacement Running (Timex 2068)
 
@@ -46,11 +48,11 @@ System running with CPLD-based SCLD replacement, monitored using a Guzman logic 
 
 ---
 
-### Timmy where this was tested first.
+### Timex 2048 Test System
 
-![Timex Board](docs/images/image-1777061549706.jpg)
+![Timmy Board](docs/images/image-1777061549706.jpg)
 
-Target system for SCLD replacement.
+Initial test platform where the CPLD implementation was first validated.
 
 ---
 
@@ -100,10 +102,10 @@ This version includes:
 
 * Started from original VHDL implementation
 * Observed incorrect behaviour on real hardware
-* Analysed signals using logic analyzer
+* Analysed signals using a logic analyzer
 * Adjusted timing and internal logic
 * Tested with multiple Z80 variants (NMOS / CMOS)
-* Validated behaviour against real system
+* Validated behaviour against real systems
 
 ---
 
@@ -229,29 +231,3 @@ TIMEX is a trademark of TIMEX GROUP USA, INC
 The authors are not affiliated with or endorsed by the trademark holders.
 
 Xilinx is a registered trademark of Xilinx, Inc.
-
-## 📸 Hardware & Debug
-
-> Real hardware validation using logic analysis and live system testing.
-
-### Logic Analyzer (Timing Validation)
-
-![Logic Analyzer](docs/images/image-1777061179767.jpg)
-
-Captured signals used to debug and align timing (MREQ, RAS, CAS, multiplexing).
-
----
-
-### Timex 2048 ("Timmy") Running with Guzman Analyzer
-
-![Timmy Running](docs/images/image-1777061193117.jpg)
-
-CPLD-based SCLD replacement running on real hardware.
-
----
-
-### Timex 2068 Hardware
-
-![Timex Board](docs/images/image-1777061549706.jpg)
-
-Target system for SCLD replacement.
