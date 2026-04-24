@@ -269,19 +269,41 @@ Validated against real hardware:
 
 Based on work from:
 
-* Load ZX Spectrum Museum
-* Álvaro Lopes
-* Paulo Cortesão
-* João Diogo
-* Hugo Pinto
+- Load ZX Spectrum Museum  
+- Álvaro Lopes  
+- Paulo Cortesão  
 
-Additional support:
+Support:
+- João Diogo 
+- Hugo Pinto
+- Marco Pais
 
-* Rui Ribeiro
+---
 
-Extended, fixed and hardware-validated implementation:
+### 🧪 Technical Support & Testing
 
-* António Vítor
+Special thanks to Rui Ribeiro:
+
+- Provided  ROMs used for validation  
+- Helped verify behaviour against real systems  
+- Shared knowledge of Timex hardware and timing and the weird timex 2068 paging...
+
+---
+
+### 🧠 Implementation (VHDL, Hardware & PCB Design)
+
+- António Vítor  
+
+Complete implementation and validation:
+
+- VHDL development and debugging  
+- Timing fixes (MREQ, RAS/CAS, multiplexing)  
+- Hardware design and integration  
+- PCB design using KiCad  
+- CPLD implementation and testing  
+- Real hardware validation  
+
+This includes both the logic implementation and the full hardware solution.
 
 ---
 
