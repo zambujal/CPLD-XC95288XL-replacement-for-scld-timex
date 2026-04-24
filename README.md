@@ -77,7 +77,6 @@ Xilinx is a registered trademark of Xilinx, Inc.
 ---
 
 ## 📸 Hardware & Debug
-## 📸 Hardware & Debug
 
 > Real hardware validation using logic analysis and live system testing.
 
