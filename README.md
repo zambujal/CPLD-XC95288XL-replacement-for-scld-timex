@@ -1,6 +1,6 @@
 # Timex SCLD CPLD Replacement (TC2068)
 
-![Working Setup](docs/images/image-1777061193117.jpg)
+![Working Setup](docs/images/image-1777061753765.jpg)
 
 A fully working CPLD replacement for the Timex SCLD — validated on real hardware.
 
