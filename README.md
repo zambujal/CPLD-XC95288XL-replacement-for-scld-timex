@@ -1,5 +1,3 @@
-# CPLD XC95288XL Replacement for Timex SCLD
-
 A fully working CPLD-based replacement for the Timex SCLD, validated on real hardware.
 
 This project is based on the original reverse engineering and VHDL model developed by the Load ZX Spectrum Museum and contributors.
@@ -13,10 +11,14 @@ This version includes significant fixes and improvements required to achieve sta
 
 This is an implementation of the Timex TC2068 SCLD as used in:
 
-- Timex Computer 2048
-- Timex Computer 2068
+* Timex Computer 2048
+* Timex Computer 2068
 
-The SCLD is responsible for memory control, video timing, and bus arbitration.
+The SCLD is responsible for:
+
+* Memory control
+* Video timing
+* Bus arbitration
 
 ---
 
@@ -24,11 +26,11 @@ The SCLD is responsible for memory control, video timing, and bus arbitration.
 
 This version includes major corrections and hardware validation:
 
-- Timing fixes (MREQ, RAS/CAS, address multiplexing)
-- Improved compatibility with CMOS Z80 CPUs
-- Bus contention behaviour corrections
-- DRAM access stabilization
-- Real hardware validation (not just simulation)
+* Timing fixes (MREQ, RAS/CAS, address multiplexing)
+* Improved compatibility with CMOS Z80 CPUs
+* Bus contention behaviour corrections
+* DRAM access stabilization
+* Real hardware validation (not just simulation)
 
 ---
 
@@ -36,19 +38,19 @@ This version includes major corrections and hardware validation:
 
 Based on work from:
 
-- Load ZX Spectrum Museum
-- Álvaro Lopes
-- Paulo Cortesão
-- João Diogo
-- Hugo Pinto
+* Load ZX Spectrum Museum
+* Álvaro Lopes
+* Paulo Cortesão
+* João Diogo
+* Hugo Pinto
 
 Additional support:
 
-- Rui Ribeiro
+* Rui Ribeiro
 
 Extended, fixed and hardware-validated implementation:
 
-- António Vítor
+* António Vítor
 
 ---
 
@@ -72,6 +74,9 @@ The authors of this work are not affiliated with or endorsed by the trademark ho
 
 Xilinx is a registered trademark of Xilinx, Inc.
 
+---
+
+## 📸 Hardware & Debug
 ## 📸 Hardware & Debug
 
 > Real hardware validation using logic analysis and live system testing.
@@ -84,7 +89,7 @@ Captured signals used to debug and align timing (MREQ, RAS, CAS, multiplexing).
 
 ---
 
-### Timex 2048 ("Timmy") Running
+### Timex 2048 ("Timmy") Running with Guzman Analyzer
 
 ![Timmy Running](docs/images/image-1777061193117.jpg)
 
