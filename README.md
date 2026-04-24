@@ -192,7 +192,7 @@ Key fixes were implemented and validated directly on the PCB.
 
 ### Final PCB
 
-`hardware/pcb/final/`
+`Hardware/PCB/Beta/`
 
 Final PCB design used for the working CPLD-based SCLD replacement.
 
@@ -200,7 +200,7 @@ Final PCB design used for the working CPLD-based SCLD replacement.
 
 ### Prototype PCB
 
-`hardware/pcb/prototype/`
+`Hardware/PCB/prototype`
 
 Early prototype used during development and testing.
 
@@ -208,7 +208,7 @@ Early prototype used during development and testing.
 
 ### Prototype Schematic
 
-`hardware/schematics/`
+`Hardware/Schematics`
 
 ⚠️ Note:
 This schematic corresponds to the prototype stage and may differ from the final PCB.
@@ -219,7 +219,7 @@ This schematic corresponds to the prototype stage and may differ from the final 
 
 ### Prebuilt
 
-`firmware/jed/`
+`firmware/jed`
 
 * `scld_devboard.jed` → ready to program
 
