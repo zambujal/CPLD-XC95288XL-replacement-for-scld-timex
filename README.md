@@ -16,9 +16,13 @@ A fully working CPLD replacement for the Timex SCLD — validated on real hardwa
 
 > ✔ Proof of real hardware operation — not just simulation
 
-### CPLD Replacement Running (Timex 2068)
+### CPLD Replacement Running (Timmy)
 
 https://www.youtube.com/watch?v=t5ia4-bkabo
+
+### CPLD Replacement Running (Timex 2068)
+
+https://www.youtube.com/watch?v=evhCbX4_XCQ
 
 ---
 
