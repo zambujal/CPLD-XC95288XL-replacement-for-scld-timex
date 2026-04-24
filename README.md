@@ -158,16 +158,20 @@ The SCLD is responsible for:
 
 ## 🔧 What was fixed / improved
 
-The original implementation worked in simulation but not reliably on real hardware.
+The original implementation worked on the Timex 2048 with some limitations and was implemented on a smaller CPLD.
 
-This version includes:
+However, it was incomplete and did not correctly support key features required for full Timex 2068 compatibility.
 
-* Timing fixes (MREQ, RAS, CAS, multiplexing)
-* Improved compatibility with CMOS Z80 CPUs
-* Bus contention corrections
-* DRAM access stabilization
-* Real hardware validation
+This implementation focuses on correct behaviour on real hardware and full system compatibility.
 
+Key improvements include:
+
+- Proper support for Timex 2068 memory paging  
+- Implementation of missing I/O behaviour (`IN FF`, `IN F4`)  
+- Correct handling of bank switching and EXROM behaviour  
+- Timing fixes for reliable operation with both NMOS and CMOS Z80 CPUs  
+- Improved stability and DRAM access behaviour  
+- Full validation on real hardware (not just simulation)  
 ---
 
 ## 🧪 Development Process
