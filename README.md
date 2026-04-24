@@ -12,6 +12,7 @@ A fully working CPLD replacement for the Timex SCLD — validated on real hardwa
 > This is not just a simulation model — this version works on real hardware.
 
 ---
+Target device: Xilinx XC95288XL CPLD
 
 ## 🎥 Demo (Real Hardware)
 
