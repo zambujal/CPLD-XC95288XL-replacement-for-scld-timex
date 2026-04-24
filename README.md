@@ -71,3 +71,29 @@ TIMEX is a trademark of TIMEX GROUP USA, INC
 The authors of this work are not affiliated with or endorsed by the trademark holders.
 
 Xilinx is a registered trademark of Xilinx, Inc.
+
+## 📸 Hardware & Debug
+
+> Real hardware validation using logic analysis and live system testing.
+
+### Logic Analyzer (Timing Validation)
+
+![Logic Analyzer](docs/images/image-1777061179767.jpg)
+
+Captured signals used to debug and align timing (MREQ, RAS, CAS, multiplexing).
+
+---
+
+### Timex 2048 ("Timmy") Running
+
+![Timmy Running](docs/images/image-1777061193117.jpg)
+
+CPLD-based SCLD replacement running on real hardware.
+
+---
+
+### Timex 2068 Hardware
+
+![Timex Board](docs/images/image-1777061549706.jpg)
+
+Target system for SCLD replacement.
