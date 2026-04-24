@@ -1,34 +1,73 @@
-# CPLD-XC95288XL-replacement-for-scld-timex
-Based on the work of Alvaro and the museum load 
+# CPLD XC95288XL Replacement for Timex SCLD
 
-Timex SCLD
-This is an implementation of the Timex TC2068 SCLD as can be found in Timex models TC2048 and TC2068.
+A fully working CPLD-based replacement for the Timex SCLD, validated on real hardware.
 
-License
-All the design files (VHDL code, PCB designs) are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+This project is based on the original reverse engineering and VHDL model developed by the Load ZX Spectrum Museum and contributors.
 
-You should have received a copy of the license along with this work. If not, see https://creativecommons.org/licenses/by-sa/4.0/.
+⚠️ The original implementation was not fully functional on real hardware.
+This version includes significant fixes and improvements required to achieve stable operation.
 
-A copy of the legal license text is placed in this repository (see LICENSE)
+---
 
-Trademarks
+## 🧠 Overview
+
+This is an implementation of the Timex TC2068 SCLD as used in:
+
+- Timex Computer 2048
+- Timex Computer 2068
+
+The SCLD is responsible for memory control, video timing, and bus arbitration.
+
+---
+
+## 🔧 What was added / fixed
+
+This version includes major corrections and hardware validation:
+
+- Timing fixes (MREQ, RAS/CAS, address multiplexing)
+- Improved compatibility with CMOS Z80 CPUs
+- Bus contention behaviour corrections
+- DRAM access stabilization
+- Real hardware validation (not just simulation)
+
+---
+
+## 🙏 Credits
+
+Based on work from:
+
+- Load ZX Spectrum Museum
+- Álvaro Lopes
+- Paulo Cortesão
+- João Diogo
+- Hugo Pinto
+
+Additional support:
+
+- Rui Ribeiro
+
+Extended, fixed and hardware-validated implementation:
+
+- António Vítor
+
+---
+
+## 📜 License
+
+All design files (VHDL, PCB, etc.) are licensed under:
+
+Creative Commons Attribution-ShareAlike 4.0 International License
+
+https://creativecommons.org/licenses/by-sa/4.0/
+
+A copy of the license is included in this repository.
+
+---
+
+## ⚖️ Trademarks
+
 TIMEX is a trademark of TIMEX GROUP USA, INC
 
-The authors of this work are not affiliated, sponsored or have any partnership with the trademark holders. The trademark holders do not sponsor or endorse this work or any of its authors.
+The authors of this work are not affiliated with or endorsed by the trademark holders.
 
-Xilinx is a registered trademark of Xilinx in the United States and other countries.
-
-Implementation code
-The implementation (VHDL code and associated files) target a XC95288XL-10TQ144 CPLD from Xilinx.
-
-Synthesis
-The tool used for synthesis and fitting was Xilinx ISE 14.7.
-
-Programming
-Programming can be acomplished with Xilinx Impact using a proper programmer (i.e., Xilinx Platform Cable)
-
-Building
-Just type "make" under the SDLC implementation folder (syn/xilinx). Alternatively you can try loading the ISE project in the same directory.
-
-just a PCB for the timmy to test signals... and the software for the xilinx, the pcb as less components than the museum one, the xilinx is of 2x the size.
-
+Xilinx is a registered trademark of Xilinx, Inc.
