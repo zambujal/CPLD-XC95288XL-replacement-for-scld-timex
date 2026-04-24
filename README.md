@@ -26,12 +26,6 @@ https://www.youtube.com/watch?v=evhCbX4_XCQ
 
 ---
 
-### Original Hardware Reference (SCLD)
-
-https://www.youtube.com/watch?v=evhCbX4_XCQ
-
----
-
 ## 📸 Hardware & Debug
 
 > Real hardware validation using logic analysis and live system testing.
