@@ -31,62 +31,7 @@ https://www.youtube.com/watch?v=evhCbX4_XCQ
 
 ## 📸 Hardware & Debug
 
-## 🔌 Hardware Integration Details
-
-The CPLD board was designed to interface with the original Timex hardware using a practical and non-invasive approach.
-
-> ⚠️ No permanent modification to the original system is required.
-
----
-
-### CPLD Prototype (Hand-Assembled)
-
-![CPLD Prototype](docs/images/IMG20260424220437.jpg)
-
-Hand-assembled CPLD prototype (beta version) used during early hardware validation.
-
----
-
-### Development Setup (Measurement & Debug)
-
-![Prototype 1](docs/images/image-1777061658208.jpg)
-![Prototype 2](docs/images/image-1777061753765.jpg)
-![Prototype 3](docs/images/image-1777061652731.jpg)
-
-Temporary wiring and 90° pin connections were used to access signals for measurement and debugging.
-
-This setup allowed probing critical signals (MREQ, RAS, CAS, etc.) during development.
-
-⚠️ Note:
-Due to the nature of this test setup (long wires and probe points), signal integrity issues such as spikes and noise were observed.  
-These effects were related to the measurement setup, not the final design.
-
----
-
-### Final PCB Solution
-
-The final PCB design removes the need for temporary wiring and provides:
-
-- Short and controlled signal paths  
-- Improved signal integrity  
-- Stable and reliable operation  
-- Proper integration with the system  
-
----
-
-### PLCC Socket Compatibility
-
-The original SCLD is installed in a PLCC socket on Timex machines.
-
-This implementation takes advantage of that by allowing a drop-in style replacement without permanently modifying the motherboard.
-
----
-
-### 90° Pin Technique (Debug Use)
-
-Right-angle (90°) pin headers were used during development to expose signals for testing.
-
-These were primarily used for debugging and measurement, not as part of the final solution.
+> Real hardware validation using logic analysis and live system testing.
 
 ### Logic Analyzer (Timing Validation)
 
@@ -104,7 +49,7 @@ System running with CPLD-based SCLD replacement, monitored using a Guzman logic 
 
 ---
 
-### Timex 2048 Test System AKA timmy
+### Timex 2048 Test System ("Timmy")
 
 ![Timmy Board](docs/images/image-1777061549706.jpg)
 
@@ -112,10 +57,78 @@ Initial test platform where the CPLD implementation was first validated.
 
 ---
 
+## 🔌 Hardware Integration Details
+
+The CPLD board was designed to interface with the original Timex hardware using a practical and non-invasive approach.
+
+> ⚠️ No permanent modification to the original system is required (after socket installation).
+
+---
+
+### CPLD Prototype (Hand-Assembled)
+
+![CPLD Prototype](docs/images/IMG20260424220437.jpg)
+
+Hand-assembled CPLD prototype (beta version) used during early hardware validation.
+
+---
+
+### Development Setup (Debug & Measurement)
+
+![Prototype Debug](docs/images/image-1777061658208.jpg)
+
+Temporary wiring and probe points were used during development to access internal signals for measurement and debugging.
+
+These connections were used to:
+
+* Probe critical signals (MREQ, RAS, CAS, etc.)
+* Validate timing behaviour
+* Debug hardware interactions
+
+⚠️ Note:
+Signal artifacts such as spikes/noise observed during this stage were related to the measurement setup, not the final design.
+
+---
+
+### Final Hardware Integration
+
+![Final Integration](docs/images/image-1777061753765.jpg)
+
+Final CPLD implementation using right-angle (90°) pin headers.
+
+---
+
+### 90° Pin Integration Technique (Final Design)
+
+Right-angle (90°) pin headers are used as part of the final design to interface the CPLD board with the installed PLCC socket.
+
+This provides:
+
+* Correct alignment with the socket
+* Reliable electrical connections
+* Mechanical stability
+* Easy installation and removal
+
+---
+
+### PLCC Socket Adaptation
+
+The original SCLD is soldered directly to the motherboard in Timex machines.
+
+For this project, a PLCC socket was installed to allow easy testing and replacement without repeatedly soldering components.
+
+This enables:
+
+* Safe insertion and removal of the CPLD board
+* Faster development iterations
+* Reduced risk of damage to the motherboard
+
+---
+
 ## ⚡ Quick Start
 
 1. Program the CPLD with `scld_devboard.jed`
-2. Install in place of the original SCLD
+2. Insert into the installed PLCC socket
 3. Power on
 
 Done.
@@ -197,8 +210,6 @@ Early prototype used during development and testing.
 
 ⚠️ Note:
 This schematic corresponds to the prototype stage and may differ from the final PCB.
-
-The design evolved through direct hardware testing and iterative fixes.
 
 ---
 
