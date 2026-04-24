@@ -5,7 +5,8 @@
 A fully working CPLD replacement for the Timex SCLD — validated on real hardware.
 
 ✔ Timing fixes
-✔ CMOS Z80 compatible
+✔ CMOS Z84 compatible
+✔ NMOS Z80 compatible
 ✔ Tested on real hardware
 
 > This is not just a simulation model — this version works on real hardware.
