@@ -49,7 +49,7 @@ System running with CPLD-based SCLD replacement, monitored using a Guzman logic 
 
 ---
 
-### Timex 2048 Test System
+### Timex 2048 Test System AKA timmy
 
 ![Timmy Board](docs/images/image-1777061549706.jpg)
 
