@@ -15,7 +15,7 @@ A fully working CPLD replacement for the Timex SCLD — validated on real hardwa
 
 ### Kicad final Beta PCB
 
-![kicad work](docs/images/kicad1.jpg)
+![kicad work](docs/images/boom.jpg)
 
 My last iteration of the PCB (work in progress...maybe).
 
