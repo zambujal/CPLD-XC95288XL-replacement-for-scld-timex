@@ -17,7 +17,7 @@ A fully working CPLD replacement for the Timex SCLD — validated on real hardwa
 
 ![kicad work](docs/images/boom.png)
 
-My last iteration of the PCB (work in progress...maybe). You might use 10uF on both rails 5v and 3.2v ... I really don't know I changed of caps 10 uF is great for the two big caps... don't used electrolitic though "space"
+My last iteration of the PCB (work in progress...maybe). You might use 10uF on both rails 5v and 3.2v ... I really don't know why I changed from two caps at same value 10 uF, 10 uF is great for the two big caps... don't used electrolitic though "space"
 
 ---
 
