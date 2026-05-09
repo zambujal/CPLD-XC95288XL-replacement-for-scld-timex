@@ -12,6 +12,48 @@ A fully working CPLD replacement for the Timex SCLD — validated on real hardwa
 
 > This is not just a simulation model — this version works on real hardware.
 ---
+### ERRATA: 
+# ERRATA - scld_devboard.vhd
+
+## Output Pin High Impedance - Code Bug
+
+### Problem
+
+The `OE` signal is hardwired to `'1'`, which means the condition:
+
+```vhdl
+SIGNAL <= SIGNAL_o_s WHEN OE='1' else 'Z';
+```
+
+**never** produces high impedance on any output pin. This is a **code bug**, not a Xilinx hardware limitation.
+
+The XC95288XL correctly implements tristate output buffers (OBUFT) when the condition actually varies — as demonstrated by the `CPUCLK` fix, where using `CPUCLK_o_s='0'` as the condition produces true tristate behaviour.
+
+### Consequence
+
+All output pins remain **push-pull at 3.3V**. Pull-up resistors placed on these output pins have no effect on the HIGH level, since the CPLD actively drives 3.3V. The output will never float to allow an external pull-up to reach 5V.
+
+Pull-ups are only effective where true tristate occurs or on input/bidirectional pins.
+
+### Signal Status
+
+| Signal | Status | Notes |
+|--------|--------|-------|
+| `CPUCLK` | ✅ Fixed | Condition changed to `CPUCLK_o_s='0'` — true tristate. Use 1kΩ pull-up to 5V (max IOL = 8mA per datasheet). Required for CMOS Z80 compatibility. |
+| `TPOUT` | ✅ Fixed | External audio buffer added. |
+| `INT` | ✅ Fixed | Open-drain via `'0'/'1'` — correct behaviour, no pull-up to `'Z'` needed. |
+| `D`, `MA` | ✅ OK | Bidirectional `inout` — tristate works correctly. |
+| `KB` | ✅ OK | Input only — 10kΩ pull-ups correct and required. |
+| All other outputs | ⚠️ Push-pull 3.3V | Functional for 5V TTL/CMOS receivers (VIH min = 2.0V). No external buffer needed unless 5V level is required. |
+
+### What Works Despite the Bug
+
+The 3.3V push-pull output is sufficient for most 5V TTL and CMOS receivers (VIH min = 2.0V). The system works correctly with an NMOS Z80. For CMOS Z80, the CPUCLK requires a higher voltage level — fixed with the true tristate + pull-up solution above.
+
+### TODO
+
+- `CPUCLKB` — may benefit from external buffer if CMOS Z80 is used.
+- Review and fix the `OE` condition across all output assignments, replacing with signal-specific conditions where true tristate is required.
 
 ### Kicad final Beta PCB
 
